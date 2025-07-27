@@ -58,3 +58,5 @@ ADCTest.mc3
 *.properties
 
 dist/default/production/memoryfile.xml
+
+.generated_files/flags/default/

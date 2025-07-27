@@ -8,6 +8,7 @@
 #include "mcc_generated_files/adc/adc1.h"
 #include "mcc_generated_files/uart/uart1.h"
 #include "mcc_generated_files/system/pins.h"
+#include "mcc_generated_files/timer/timer_interface.h"
 
 #define LED0 _LATC8
 #define LED1 _LATC9
@@ -22,6 +23,12 @@
 
 const struct ADC_INTERFACE *adc = &ADC1;
 const struct UART_INTERFACE *UartSerial = &UART1_Drv;
+const struct TIMER_INTERFACE *timer = &Timer1;
+
+static void TMR1_TimeoutCallback(void)
+{
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~ 1 SECOND TIMER ELAPSED ~~~~~~~~~~~~~~~~~~~~~~~~\r\n");
+}
 
 int main(void)
 {
