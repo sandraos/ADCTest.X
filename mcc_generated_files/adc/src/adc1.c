@@ -247,8 +247,6 @@ void ADC1_Initialize (void)
     // Enabling ADC Module
     ADCON1Lbits.ADON = 0x1;
     
-    ADCON2Hbits.SHRSAMC0 = 0x03FF;
-    
     // Enabling Power for the Shared Core
     ADC1_SharedCorePowerEnable();
 
