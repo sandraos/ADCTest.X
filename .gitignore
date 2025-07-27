@@ -50,3 +50,11 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+*.yml
+
+ADCTest.mc3
+
+*.properties
+
+dist/default/production/memoryfile.xml
