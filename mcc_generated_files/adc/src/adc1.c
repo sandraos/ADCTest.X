@@ -246,7 +246,6 @@ void ADC1_Initialize (void)
     ADCON5Hbits.WARMTIME = 0xF;
     // Enabling ADC Module
     ADCON1Lbits.ADON = 0x1;
-    
     // Enabling Power for the Shared Core
     ADC1_SharedCorePowerEnable();
 
